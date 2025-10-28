@@ -7,18 +7,17 @@ This project demonstrates how to visualize Fashion-MNIST images and monitor simu
 The project is divided into two main tasks, each highlighting a specific aspect of machine learning:
 
 Task 1: **Fashion-MNIST Image Display**
-Loads the Fashion-MNIST dataset (training and validation images).
-Normalizes pixel values from 0–255 to 0–1 for TensorFlow compatibility.
-Adds channel dimension and converts the data into TensorFlow datasets.
-Uses a custom function to display the first three images in grayscale, side by side.
+In this task, we focused on **understanding and visualizing the Fashion-MNIST dataset**, which consists of grayscale images of clothing items such as shirts, shoes, and bags. We started by loading the dataset using TensorFlow and splitting it into training and validation sets. The pixel values were normalized from 0–255 to a 0–1 range to ensure compatibility with neural network inputs. We also added an additional channel dimension to the images, preparing them for TensorFlow operations.
+A **custom show_data() function** was implemented to display images in a visually appealing format. Using this function, the first three images from the validation set were displayed in grayscale, side by side, without axes. This task helped in gaining an intuitive understanding of the dataset and its structure before feeding it into a model.
+
+**Output:** A horizontal display of three sample Fashion-MNIST images, providing grayscale visualization of the types of clothing items present in the dataset.
 
 Task 2: **Training Curves Visualization**
-Simulates training progress over 10 epochs.
-Generates decreasing loss values and increasing accuracy values to mimic model learning.
-Plots both metrics on a single graph using dual y-axes.
-Saves the graph as a PNG image to track model performance visually.
+The second task focused on **simulating and visualizing model training progress**. Instead of training a full CNN, we generated sample training metrics to demonstrate how loss decreases and accuracy increases as a model learns. Over 10 epochs, loss values were simulated to decrease from 0.8 to 0.12, while accuracy values were set to increase from 72% to 97%.
+We created a **dual-axis plot** where the left y-axis represented loss (red line) and the right y-axis represented accuracy (blue line). This allowed both metrics to be visualized simultaneously on a single graph, providing a clear picture of how the model’s performance changes over time. The plot was saved as a PNG file in the Outputs/ folder for easy reference.
 
-**⚙️ Technologies Used:**
+**Output:** A single graph showing simulated training progress, demonstrating the typical trends of a learning model and reinforcing the importance of monitoring both loss and accuracy during training.
+
 **TensorFlow** – for dataset handling and preprocessing
 **NumPy, Matplotlib** – for data manipulation and visualization
 
