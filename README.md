@@ -1,6 +1,7 @@
 **Fashion-MNIST Data Visualization and Training Curves Using TensorFlow**
 
-Part of **IBM AI Engineering Professional Certificate — “Neural Networks and TensorFlow”**
+Part of **IBM AI Engineering Professional Certificate — “Neural Networks and TensorFlow”**.
+
 This project demonstrates how to visualize Fashion-MNIST images and monitor simulated CNN training progress. It covers key machine learning concepts such as **dataset preprocessing, image visualization, and model performance tracking.**
 
 **🚀 Project Overview:**
